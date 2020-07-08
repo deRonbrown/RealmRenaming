@@ -13,35 +13,27 @@ class ViewController: UIViewController {
   private static let realmConfig = Realm.Configuration(
     fileURL: Realm.Configuration.defaultConfiguration.fileURL,
     readOnly: false,
-    schemaVersion: 1,
+    schemaVersion: 2,
+    migrationBlock: { migration, oldSchemaVersion in
+      if oldSchemaVersion < 2 {
+        migration.enumerateObjects(ofType: "Foo") { oldObject, newObject in
+          if let oldObject = oldObject {
+            // Create Bar from Foo
+            migration.create("Bar", value: oldObject)
+          }
+        }
+      }
+    },
     deleteRealmIfMigrationNeeded: false)
   
   private let realm = try? Realm(configuration: realmConfig)
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    // Generate some Foos
-    guard let realm = realm else { return }
-    if realm.objects(Foo.self).count == 0 {
-      
-      try? realm.write {
-        for i in (0..<10) {
-          let foo = Foo()
-          foo.uuid = UUID().uuidString
-          foo.title = "Foo\(i)"
-          realm.add(foo)
-        }
-      }
-    }
-  }
-  
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     
     guard let realm = realm else { return }
-    for foo in realm.objects(Foo.self) {
-      print("\(foo.title) (\(foo.uuid))")
+    for bar in realm.objects(Bar.self) {
+      print("\(bar.title) (\(bar.uuid))")
     }
   }
 }

@@ -1,5 +1,5 @@
 //
-//  Foo.swift
+//  Bar.swift
 //  RealmRenaming
 //
 //  Created by DeRon Brown on 7/8/20.
@@ -7,7 +7,7 @@
 
 import RealmSwift
 
-class Foo : Object {
+class Bar : Object {
   @objc dynamic var uuid: String = ""
   @objc dynamic var title: String = ""
   

@@ -14,7 +14,7 @@
 		912FBC5024B6697500BF8EFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912FBC4E24B6697500BF8EFC /* Main.storyboard */; };
 		912FBC5224B6697600BF8EFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912FBC5124B6697600BF8EFC /* Assets.xcassets */; };
 		912FBC5524B6697600BF8EFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912FBC5324B6697600BF8EFC /* LaunchScreen.storyboard */; };
-		912FBC5D24B66A5C00BF8EFC /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FBC5C24B66A5C00BF8EFC /* Foo.swift */; };
+		912FBC5F24B66F7B00BF8EFC /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FBC5E24B66F7B00BF8EFC /* Bar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		912FBC5124B6697600BF8EFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		912FBC5424B6697600BF8EFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		912FBC5624B6697600BF8EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912FBC5C24B66A5C00BF8EFC /* Foo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
+		912FBC5E24B66F7B00BF8EFC /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 		A979239EBE83A35266CD4A6C /* Pods-RealmRenaming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmRenaming.debug.xcconfig"; path = "Target Support Files/Pods-RealmRenaming/Pods-RealmRenaming.debug.xcconfig"; sourceTree = "<group>"; };
 		C01F592AD583C2BD88C1A3FB /* Pods_RealmRenaming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmRenaming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,7 +77,7 @@
 				912FBC4824B6697500BF8EFC /* AppDelegate.swift */,
 				912FBC4A24B6697500BF8EFC /* SceneDelegate.swift */,
 				912FBC4C24B6697500BF8EFC /* ViewController.swift */,
-				912FBC5C24B66A5C00BF8EFC /* Foo.swift */,
+				912FBC5E24B66F7B00BF8EFC /* Bar.swift */,
 				912FBC4E24B6697500BF8EFC /* Main.storyboard */,
 				912FBC5124B6697600BF8EFC /* Assets.xcassets */,
 				912FBC5324B6697600BF8EFC /* LaunchScreen.storyboard */,
@@ -208,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				912FBC5D24B66A5C00BF8EFC /* Foo.swift in Sources */,
+				912FBC5F24B66F7B00BF8EFC /* Bar.swift in Sources */,
 				912FBC4D24B6697500BF8EFC /* ViewController.swift in Sources */,
 				912FBC4924B6697500BF8EFC /* AppDelegate.swift in Sources */,
 				912FBC4B24B6697500BF8EFC /* SceneDelegate.swift in Sources */,
